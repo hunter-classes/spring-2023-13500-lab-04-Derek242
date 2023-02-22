@@ -42,9 +42,24 @@ int main(){
     std::cout << lower(3); std::cout << "\n------------------\n"; 
         
     //Task E
+
     std::cout << "The size of the upper triangle: 5 \n";
     std::cout << upper(5); std::cout << "\n------------------\n"; 
     std::cout << "The size of the upper triangle: 10 \n";
     std::cout << upper(10); std::cout << "\n------------------\n"; 
+
+    //Task F
+
+    std::cout << "The width of trapezoid: 12 \n" << "The height of trapezoid: 14 \n";
+    std::cout << trapezoid(12,14); std::cout << "\n------------------\n"; 
+    std::cout << "The width of trapezoid: 12 \n" << "The height of trapezoid: 5 \n";
+    std::cout << trapezoid(12,5); std::cout << "\n------------------\n"; 
+
+    //Task G
+
+    std::cout << "The width of checkerboard3x3: 27 \n" << "The height of checkerboard3x3: 27 \n";
+    std::cout << checkerboard3x3(27,27); std::cout << "\n------------------\n"; 
+    std::cout << "The width of checkerboard3x3: 9 \n" << "The height of checkerboard3x3: 17 \n";
+    std::cout << checkerboard3x3(9,17); std::cout << "\n------------------\n"; 
     return 0;
 }

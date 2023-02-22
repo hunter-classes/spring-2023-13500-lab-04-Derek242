@@ -1,6 +1,6 @@
 
-main: main.o box.o checkerboard.o cross.o lower.o upper.o
-	g++ -o main main.o box.o checkerboard.o cross.o lower.o upper.o
+main: main.o box.o checkerboard.o cross.o lower.o upper.o trapezoid.o checkerboard3x3.o
+	g++ -o main main.o box.o checkerboard.o cross.o lower.o upper.o trapezoid.o checkerboard3x3.o
 
 main.o: main.cpp funcs.h
 	g++ -c main.cpp
@@ -20,5 +20,10 @@ lower.o: lower.cpp funcs.h
 upper.o: upper.cpp funcs.h
 	g++ -c upper.cpp
 
+trapezoid.o: trapezoid.cpp funcs.h
+	g++ -c trapezoid.cpp
+
+checkerboard3x3.o: checkerboard3x3.cpp funcs.h
+	g++ -c checkerboard3x3.cpp
 clean:
-	rm -f main main.o box.o checkerboard.o cross.o lower.o upper.o
+	rm -f main main.o box.o checkerboard.o cross.o lower.o upper.o trapezoid.o checkerboard3x3.o
